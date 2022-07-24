@@ -32,12 +32,10 @@ export const getPedido = async(req, res, next) => {
 }
 
 export const createPedido = async(req, res, next) => {
-	console.log(req.body)
 		try{
-			conosle.log(req.body)
 				const pedido = await Pedido.create({ 
           mesa:              req.body.mesa,
-          productos:         req.body.productos,
+          descripcion:         req.body.descripcion,
           total:             req.body.total,
           usuario_id:         req.body.usuario_id,
           sede_id:            req.body.sede_id,
@@ -53,7 +51,6 @@ export const createPedido = async(req, res, next) => {
 						pedido
 					});
 				}else{
-					console.log(pedido)
 					return res.status(400).json({
 						mensaje: 'Hubo un error al crear un pedido.'
 					});

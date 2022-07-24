@@ -15,7 +15,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       imagen: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT('long')
       },
       stock: {
         type: Sequelize.INTEGER

@@ -67,12 +67,13 @@ export const createProducto = async(req, res, next) => {
 export const updateProducto = async(req, res, next) => {
 		try{
 
+				console.log(req.body.imagen)
 				const producto = await Producto.update({ 
           nombre:            req.body.nombre,
           valor:             req.body.valor,
           imagen:            req.body.imagen,
-          stock:            req.body.stock,
-          sede_id:            req.body.sede_id,
+          stock:            parseInt(req.body.stock),
+          sede_id:            parseInt(req.body.sede_id),
           updated_at:        moment(new Date()).utcOffset("-05:00").format("YYYY-MM-DD hh:mm:ss"),
 				},
 				{ 

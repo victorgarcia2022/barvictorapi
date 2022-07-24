@@ -19,13 +19,13 @@ Content-Type: application/json
 GET {{api}}/5
 
 ### UPDATE BY ID
-PATCH {{api}}/2
+PATCH {{api}}/1
 Content-Type: application/json
 
 {
-  "nombre":"Ron Actualizado 20 años",
-  "valor": 110000,
-  "imagen":"´https://i0.wp.com/www.licoresmedellin.com/wp-content/uploads/2022/06/Mezcal-Union-Kit-VIEJO-700ml.jpg?fit=600%2C800&ssl=1´",
+  "nombre":"Mezcal Unión el Viejo Botella – 700ml",
+  "valor": 237900,
+  "imagen":"https://i0.wp.com/www.licoresmedellin.com/wp-content/uploads/2022/06/Mezcal-Union-Kit-VIEJO-700ml.jpg?fit=600%2C800&ssl=1",
   "stock":20,
   "sede_id":1
 }

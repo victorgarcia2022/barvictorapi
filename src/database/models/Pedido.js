@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Pedido.init({
     mesa: DataTypes.INTEGER,
-    productos: DataTypes.JSON,
+    descripcion: DataTypes.JSON,
     total: DataTypes.STRING,
     usuario_id: {
       type: DataTypes.INTEGER,

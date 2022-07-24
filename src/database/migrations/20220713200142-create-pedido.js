@@ -11,7 +11,7 @@ module.exports = {
       mesa: {
         type: Sequelize.INTEGER
       },
-      productos: {
+      descripcion: {
         type: Sequelize.JSON
       },
       total: {

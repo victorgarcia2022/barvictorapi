@@ -9,23 +9,7 @@ Content-Type: application/json
 
 {
   "mesa":2,
-  "productos": [
-    {
-      "id": 1,
-      "id": 1,
-      "nombre": "Ron 5 años",
-      "valor": "90000",
-      "imagen": "https:&#x2F;&#x2F;i0.wp.com&#x2F;www.licoresmedellin.com&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;06&#x2F;Mezcal-Union-Kit-VIEJO-700ml.jpg?fit=600%2C800&amp;ssl=1",
-      "unidades": 2
-    },
-    {
-      "id": 2,
-      "nombre": "Ron 15 Años",
-      "valor":110000,
-      "imagen":"https://i0.wp.com/www.licoresmedellin.com/wp-content/uploads/2022/06/Mezcal-Union-Kit-VIEJO-700ml.jpg?fit=600%2C800&ssl=1",
-      "unidades":2
-    }
-  ],
+  "descripcion": [{ "nombre": "x2 Ron 5 Años", "valor": 15000}, {"nombre": "x1 Whisky añejo", "valor": 30000}],
   "total": 290000,
   "usuario_id":1,
   "sede_id":1

@@ -22,7 +22,7 @@ app.use(morgan('dev'))
 //permitir json en body
 app.use(bodyParser.json());
 //permitir urls
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 //CORS , acepta todas las peticiones de la direccion localhost:5000
 const whiteList = ['http://localhost:5000', 'http://localhost:8100']
 app.use(cors({ origin: whiteList }))

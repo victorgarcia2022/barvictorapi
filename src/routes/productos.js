@@ -19,7 +19,7 @@ router.get('/:id', [
 router.post('/', [
   body('nombre',"Debe Ingresar Un Nombre.").notEmpty().escape().trim().isLength({ min: 3 }),
   body('valor',"Debe Ingresar Un Valor.").notEmpty().escape().trim().isLength({ min: 3 }),
-  body('imagen',"Debe Ingresar Una Imagen.").notEmpty().escape().trim().isLength({ min: 3 }),
+  body('imagen',"Debe Ingresar Una Imagen.").notEmpty().isLength({ min: 3 }),
   body('stock',"Debe Ingresar Un Stock.").notEmpty().escape().trim().isInt(),
   body('sede_id',"Debe Ingresar Una Sede Válida.").notEmpty().escape().trim().isInt(),
 ], createProducto)
@@ -27,7 +27,7 @@ router.post('/', [
 router.patch('/:id', [ 
   body('nombre',"Debe Ingresar Un Nombre.").notEmpty().escape().trim().isLength({ min: 3 }),
   body('valor',"Debe Ingresar Un Valor.").notEmpty().escape().trim().isLength({ min: 3 }),
-  body('imagen',"Debe Ingresar Una Imagen.").notEmpty().escape().trim().isLength({ min: 3 }),
+  body('imagen',"Debe Ingresar Una Imagen.").notEmpty().isLength({ min: 3 }),
   body('stock',"Debe Ingresar Un Stock.").notEmpty().escape().trim().isInt(),
   body('sede_id',"Debe Ingresar Una Sede Válida.").notEmpty().escape().trim().isInt(),
 ], updateProducto)

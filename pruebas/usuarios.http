@@ -9,7 +9,7 @@ Content-Type: application/json
 
 {
     "email":"administrador12@correo.com",
-    "password": "Qaws12pj-22"
+    "password": "123456"
 }
 
 ### GET BY ID
@@ -21,7 +21,7 @@ Content-Type: application/json
 
 {
     "email":"admin@correo.com",
-    "password": "Qaws12pj-22"
+    "password": "123456"
 }
 
 ### DELETE BY ID

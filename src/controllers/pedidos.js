@@ -22,7 +22,7 @@ export const getPedido = async(req, res, next) => {
 					where: { id: req.params.id },
 					raw: true 
 				});
-				return res.status(200).json(producto);
+				return res.status(200).json(pedido);
 		}catch( error ){
 				return res.status(500).json({
 						mensaje: 'Internal server error',

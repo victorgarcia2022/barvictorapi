@@ -9,8 +9,12 @@ Content-Type: application/json
 
 {
   "mesa":2,
-  "descripcion": [{ "nombre": "x2 Ron 5 Años", "valor": 15000}, {"nombre": "x1 Whisky añejo", "valor": 30000}],
-  "total": 290000,
+  "descripcion":[
+    {"nombre": "x5 Aguardiente Cristal", "valor": 200000},
+    {"nombre": "x1 Buchannas", "valor": 190000},
+    {"nombre": "x1 Ron 5 Años", "valor": 90000}
+  ],
+  "total": 480000,
   "usuario_id":1,
   "sede_id":1
 }
